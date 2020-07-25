@@ -147,7 +147,7 @@ section {
   transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
   border-radius: 50px;
   width: 100vw;
-  background-color: white;
+  background-color: yellow;
 }
 
 .content #videoBG {
@@ -182,7 +182,7 @@ section {
   color: white;
   width: 100%;
   font-weight: 900;
-  background-color: black;
+  background-color: green;
   border: 1vh white solid;
 }
 
@@ -212,7 +212,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: white;
+  background-color: yellow;
 }
 
 .content .container h1 {
@@ -262,11 +262,11 @@ section {
 }
 
 .content .left {
-  background-color: grey;
+  background-color: yellow;
 }
 
 .content .right {
-  background-color: white;
+  background-color: grey;
 }
 
 .content p {
@@ -281,7 +281,7 @@ section {
 
 .content .banner {
   height: 60vh;
-  background-image: url("../assets/dog_black_whitebg.png");
+  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9B/production/_111434467_gettyimages-1143489763.jpg");
   background-size: cover;
   background-position: bottom;
   padding: 5vh 5vw;
