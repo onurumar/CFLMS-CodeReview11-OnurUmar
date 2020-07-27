@@ -32,8 +32,7 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
         <ul>
             <li><strong><?php echo $userRow['userName' ]; ?></strong></li>
             <li><a href="./adopt-a-pet/index.php">home</a></li>
-            <li><a href="./adopt-a-pet/admin/general.php">CATS & DOGS</a></li>
-            <li><a href="./adopt-a-pet/admin/senior.php">ALL SENIORS</a></li>
+            
             <li><a href="./adopt-a-pet/login/logout.php?logout">LOGOUT</a></li>
         </ul>
         <h1>ALL <strong><span>CATS & DOGS</span></strong></h1>

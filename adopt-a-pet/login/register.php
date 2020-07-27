@@ -79,8 +79,10 @@ $password = hash('sha256' , $pass);
    unset($pass);
   } else  {
    $errTyp = "danger";
-   $errMSG = "Something went wrong, try again later..." ;
+   $errMSG = "Something somethin went wrong...".$conn->error ;
+   
   }
+
  
  }
 
