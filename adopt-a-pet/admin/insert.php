@@ -12,15 +12,15 @@
 
           // Escape user inputs for security
             $name = mysqli_real_escape_string($conn, $_REQUEST['name']);
-            $breed = mysqli_real_escape_string($conn, $_REQUEST['breed']);
-            $type = mysqli_real_escape_string($conn, $_REQUEST['type']);
             $age = mysqli_real_escape_string($conn, $_REQUEST['age']);
             $location = mysqli_real_escape_string($conn, $_REQUEST['location']);
             $img = mysqli_real_escape_string($conn, $_REQUEST['img']);
+            $description = mysqli_real_escape_string($conn, $_REQUEST['description']);
+            $hobbies = mysqli_real_escape_string($conn, $_REQUEST['hobbies']);
 
             // Attempt insert query execution
-            $sql = "INSERT INTO animal (name, breed, type, age, location, img) 
-            VALUES ('$name', '$breed', '$type', '$age', '$location', '$img')";
+            $sql = "INSERT INTO animal (name, age, location, img, description, hobbies) 
+            VALUES ('$name', '$age', '$location', '$img', '$description', '$hobbies')";
 
             if(mysqli_query($conn, $sql)){
                 echo "<script type=\"text/javascript\">

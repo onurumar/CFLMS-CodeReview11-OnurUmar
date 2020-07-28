@@ -24,11 +24,10 @@ if ($_GET['id']) {
 
 <head>
     <title>ADOPT A PET</title>
-    <base href="/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="./adopt-a-pet/style/adminstyles.css">
+    <link rel="stylesheet" href="../style/adminstyles.css">
 </head>
 
 <body>
@@ -37,17 +36,14 @@ if ($_GET['id']) {
             <img src="<?php echo $data['img'] ?>">
 
             <div>
-                <form action="adopt-a-pet/admin/data_insert.php" method="post">
-                    <h1>EDIT <strong><?php echo $data['name'] ?></strong> the <?php echo $data['breed'] ?></h1>
+                <form action="data_insert.php" method="post">
+                    <h1>EDIT <strong><?php echo $data['name'] ?></strong></h1>
                     <label>
                         NAME:<br>
                         <input type="text" name="name" value="<?php echo $data['name'] ?>">
                         <input type="hidden" name="id" value="<?php echo $data['id'] ?>" />
                     </label>
-                    <label>
-                        BREED:<br>
-                        <input type="text" name="breed" value="<?php echo $data['breed'] ?>">
-                    </label>
+                    
                     <label>
                         LOCATION:<br>
                         <input type="text" name="location" value="<?php echo $data['location'] ?>">
@@ -56,22 +52,27 @@ if ($_GET['id']) {
                         IMAGE:<br>
                         <input type="text" name="img" value="<?php echo $data['img'] ?>">
                     </label>
-                    <br>
-                    <label>
-                        TYPE:<br>
-                        <select name="type" id="type" value="<?php echo $data['type'] ?>">
-                            <option value="1">DOG</option>
-                            <option value="2">CAT</option>
-                            <option value="3">BIRD</option>
-                            <option value="4">FISH</option>
-                            <option value="5">RABBIT</option>
-                        </select>
-                    </label>
-                    <br>
+                    
                     <label>
                         AGE IN YEARS:<br>
                         <input type="number" name="age" value="<?php echo $data['age'] ?>">
                     </label>
+
+                     <br>
+
+                        <label>
+                                DESCRIPTION: <br>
+                                <input type="text" name="description" value="<?php echo $data['description'] ?>">
+                              </label>
+                              <br>
+
+                              <label>
+                                HOBBIES:<br>
+                                <input type="text" name="hobbies" value="<?php echo $data['hobbies'] ?>">
+                              </label>
+                              <br>
+
+
                     <br>
                     <input type="submit" class="btn" value="CHANGE">
                 </form>

@@ -12,16 +12,15 @@
 
           // Escape user inputs for security
             $name = $_POST['name'];
-            $breed = $_POST['breed'];
-            $type = $_POST['type'];
             $age = $_POST['age'];
             $location = $_POST['location'];
             $img = $_POST['img'];
-
+            $description = $_POST['description'];
+            $hobbies = $_POST['hobbies'];
             $id = $_POST['id'];
 
             // Attempt insert query execution
-            $sql = "UPDATE animal SET breed = '$breed', type = '$type', age = '$age', location = '$location', name = '$name', img = '$img' WHERE id = {$id}";
+            $sql = "UPDATE animal SET age = '$age', location = '$location', name = '$name', img = '$img', description = '$description', hobbies = '$hobbies' WHERE id = {$id}";
 
             if($conn->query($sql) === TRUE) {
                 echo "<script type=\"text/javascript\">

@@ -19,11 +19,10 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
 
 <head>
     <title>ADOPT A PET</title>
-    <base href="/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="./adopt-a-pet/style/userstyles.css">
+    <link rel="stylesheet" href="../style/userstyles.css">
 </head>
 
 <body>
@@ -54,24 +53,9 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
             <div  id=\"". $row["id"] ."\" class=\"animal\">
               <img src=\"" . $row["img"] ."\">
               <h4><strong>" . $row["name"] . "</strong> " . $row["breed"] . "</h4>
-              <h5>");
+              <h5>
 
-              if ($row["type"] == 1) {
-                echo ("DOG");}
-
-              if ($row["type"] == 2) {
-                echo ("CAT");}
-
-              if ($row["type"] == 3) {
-                echo ("BIRD");}
-              
-              if ($row["type"] == 4) {
-                echo ("FISH");}
-
-              if ($row["type"] == 5) {
-                echo ("RABBIT");}
-            
-                    echo("<br>
+              <br>
               <i style=\"font-size:15px\" class=\"fa\">&#xf276;</i> " . $row["location"] . "</h5><h5>");
 
               if ($row["age"] < 2) {
@@ -97,24 +81,11 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
                   <div class=\"content\">
                     <h1><strong>" . $row["breed"] . "</strong> <span>" . $row["name"] . "</span></h1>
                     <p>
-                      <h5><br>");
+                      <h5><br>
 
-                      if ($row["type"] == 1) {
-                        echo ("DOG");}
-    
-                      if ($row["type"] == 2) {
-                        echo ("CAT");}
-    
-                      if ($row["type"] == 3) {
-                        echo ("BIRD");}
-                      
-                      if ($row["type"] == 4) {
-                        echo ("FISH");}
-    
-                      if ($row["type"] == 5) {
-                        echo ("RABBIT");}
-                    
-                            echo("</h5><br>
+
+
+                      </h5><br>
                       <i style=\"font-size:15px\" class=\"fa\">&#xf276;</i> " . $row["location"] . "<br><br>
                       <h5>");
 
@@ -172,24 +143,12 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
             <div  id=\"". $row["id"] ."\" class=\"animal\">
               <img src=\"" . $row["img"] ."\">
               <h4><strong>" . $row["name"] . "</strong> " . $row["breed"] . "</h4>
-              <h5>");
+              <h5>
 
-              if ($row["type"] == 1) {
-                echo ("DOG");}
 
-              if ($row["type"] == 2) {
-                echo ("CAT");}
 
-              if ($row["type"] == 3) {
-                echo ("BIRD");}
-              
-              if ($row["type"] == 4) {
-                echo ("FISH");}
 
-              if ($row["type"] == 5) {
-                echo ("RABBIT");}
-            
-                    echo("<br>
+              <br>
               <i style=\"font-size:15px\" class=\"fa\">&#xf276;</i> " . $row["location"] . "</h5><h5>");
 
               if ($row["age"] < 2) {
@@ -215,24 +174,13 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
                   <div class=\"content\">
                     <h1><strong>" . $row["breed"] . "</strong> <span>" . $row["name"] . "</span></h1>
                     <p>
-                      <h5><br>");
+                      <h5><br>
 
-                      if ($row["type"] == 1) {
-                        echo ("DOG");}
-    
-                      if ($row["type"] == 2) {
-                        echo ("CAT");}
-    
-                      if ($row["type"] == 3) {
-                        echo ("BIRD");}
-                      
-                      if ($row["type"] == 4) {
-                        echo ("FISH");}
-    
-                      if ($row["type"] == 5) {
-                        echo ("RABBIT");}
-                    
-                            echo("</h5><br>
+
+
+
+
+                      </h5><br>
                       <i style=\"font-size:15px\" class=\"fa\">&#xf276;</i> " . $row["location"] . "<br><br>
                       <h5>");
 

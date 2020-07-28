@@ -12,10 +12,7 @@ if ( isset($_SESSION['admin' ])!="" ) {
  header("Location: ./admin/admin.php");
  exit;
 }
-if ( isset($_SESSION['superadmin' ])!="" ) {
-    header("Location: ./admin/superadmin.php");
-    exit;
-   }
+
 
 $error = false;
 
@@ -84,11 +81,10 @@ if( isset($_POST['btn-login']) ) {
 
 <head>
     <title>ADOPT-A-PET</title>
-    <base href="/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="./adopt-a-pet/style/styles.css">
+    <link rel="stylesheet" href="./style/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -150,45 +146,13 @@ if( isset($_POST['btn-login']) ) {
                 </div>
 
                 <div class="container">
-                    <h1>WE ARE SEARCHING NEW HOMES FOR ...</h1>
+                    <h1>WE ARE SEARCHING NEW HOMES FOR OUR ANIMALS</h1>
                 </div>
 
-                <div class="container">
-
-                    <div>
-                        <h1>DOGS</h1>
-                        <img
-                            src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                    </div>
-
-                    <div>
-                        <h1>CATS</h1>
-                        <img
-                            src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                    </div>
-
-                    <div>
-                        <h1>FISHES</h1>
-                        <img
-                            src="https://images.pexels.com/photos/45910/goldfish-carassius-fish-golden-45910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                    </div>
-
-                    <div>
-                        <h1>BIRDS</h1>
-                        <img
-                            src="https://images.pexels.com/photos/56733/pexels-photo-56733.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                    </div>
-
-                    <div>
-                        <h1>RABBITS</h1>
-                        <img
-                            src="https://images.pexels.com/photos/3820509/pexels-photo-3820509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                    </div>
-
-                </div>
+                
 
                 <div class="row banner">
-                    <h2>BECOME A <strong>MEMBER</strong>,<strong> HERO</strong> & <strong>
+                    <h2>BECOME A <strong>
                             <nobr>PET-OWNER</nobr>
                         </strong></h2>
                     <button onclick="myFunction();">BECOME A MEMBER</button>

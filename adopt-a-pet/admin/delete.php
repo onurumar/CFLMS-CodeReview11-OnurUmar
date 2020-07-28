@@ -23,11 +23,10 @@
 <html lang="en">
 <head>
     <title>ADOPT A PET</title>
-    <base href="/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="./adopt-a-pet/style/adminstyles.css">
+    <link rel="stylesheet" href="../style/adminstyles.css">
 </head>
 <body>
 <div id="contact" class="container-fluid">
@@ -35,8 +34,8 @@
     <img src="<?php echo $data['img'] ?>">
 
       <div>
-        <form class="deleteform" action="adopt-a-pet/admin/deletingdata.php" method="post">
-          <h1>ARE YOU SURE YOU WANT TO DELETE THIS VEHICLE</h1><br>
+        <form class="deleteform" action="deletingdata.php" method="post">
+          <h1>ARE YOU SURE YOU WANT TO DELETE THIS ANIMAL?</h1><br>
           <input type="hidden" name= "id" value="<?php echo $data['id'] ?>" />
             <button type="submit">Yes, delete it!</button >
             <a href="index.php"><button type="button">No, go back!</button ></a>
